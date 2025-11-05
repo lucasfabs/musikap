@@ -20,15 +20,11 @@ public struct CardTitleSecondary: View {
 
     public var body: some View {
         Text(label)
-            .font(.system(size: 14, weight: .semibold))
-            .foregroundStyle(Color.blackSecondary)
+            .font(.system(size: 14))
+            .foregroundStyle(.gray)
             .onTapGesture {
                 action()
             }
             .fontWeight(.medium)
     }
-}
-
-extension Color {
-    static let blackSecondary: Color = Color("BlackSecondary", bundle: .module)
 }

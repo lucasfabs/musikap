@@ -22,10 +22,13 @@ public struct CardTitlePrimary: View {
             .font(.system(size: 18))
             .fontWeight(.bold)
             .padding(.bottom, 6)
-            .foregroundStyle(.black)
+            .foregroundStyle(Color.blackPrimary)
             .onTapGesture {
                 action()
             }
     }
 }
 
+extension Color {
+    static let blackPrimary: Color = Color("BlackPrimary", bundle: .module)
+}

@@ -11,13 +11,9 @@ import Observation
 @Observable
 class AlbumDetailViewModel {
     let album: Album
-    var isFavorite: Bool = false
     
     init(album: Album) {
         self.album = album
     }
     
-    func toggleFavorite() {
-        isFavorite.toggle()
-    }
 }

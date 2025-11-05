@@ -1,15 +1,14 @@
 //
-//  CardTitleSecondary.swift
+//  CardTitlePrimary.swift
 //  MusikapDesignSystem
 //
 //  Created by FABIOLE Lucas on 04/11/2025.
 //
 
 
-
 import SwiftUI
 
-public struct CardTitleSecondary: View {
+public struct CardTitlePrimary: View {
     let label: String
     let action: () -> Void
 
@@ -20,15 +19,13 @@ public struct CardTitleSecondary: View {
 
     public var body: some View {
         Text(label)
-            .font(.system(size: 14, weight: .semibold))
-            .foregroundStyle(Color.blackSecondary)
+            .font(.system(size: 18))
+            .fontWeight(.bold)
+            .padding(.bottom, 6)
+            .foregroundStyle(.black)
             .onTapGesture {
                 action()
             }
-            .fontWeight(.medium)
     }
 }
 
-extension Color {
-    static let blackSecondary: Color = Color("BlackSecondary", bundle: .module)
-}
