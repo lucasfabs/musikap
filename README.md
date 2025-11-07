@@ -1,7 +1,6 @@
 Auto notation : 13
 
-Musik'Ap 
+Titre : Musik'Ap 
+Description : Appli qui recupere les tops albums et artistes via l'API de Deezer
 
-Appli qui recupere les tops albums et artistes via l'API de Deezer
-
-Lucas Fabiole
+Projet tout seul : Lucas Fabiole
